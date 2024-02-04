@@ -1,1 +1,19 @@
 https://dribbble.com/shots/23098738-A-smart-TV-interface-for-an-OTT-app
+
+
+movie keys:
+
+
+1.2embed:
+    movie:- https://2embed.me/movie/tt0439572
+    tv:- https://2embed.me/tv/1396/S1/E1
+    how:-""Insert these URLs into the iframe, and the player will be displayed there. Just change the IMDb or TMDb ID as needed.
+            For IMDB id you can use tt0000000 or just number 0000000, and for TMDB you can use themoviedb.org ID should be look like this 114472.
+            For Episode parameters you can use S1/E1.""
+
+2.vidsrc.to:
+        https://vidsrc.to/
+
+
+3.superembed.stream:
+        https://www.superembed.stream/?c=embed
