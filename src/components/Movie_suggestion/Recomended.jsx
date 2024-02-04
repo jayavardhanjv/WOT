@@ -22,13 +22,16 @@ export default function Recomended() {
             >
                 <img src='src\assets\Poster\12th-Fail.jpeg' className='h-64 w-full object-fill rounded-lg'/>
                 <div className='w-full block justify-center items-center mt-1 '>
-                <h3 className='text-white font-semibold text-center text-nowrap '>imdb dsfsdgdfh sdgsbsb</h3>
+                <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th Fail</h3>
                 
                 </div>
                 <div className='w-full flex justify-between items-center mt-1 flex-wrap px-2'>
-                <span className='flex'><img src='src\assets\logo\rottant_tomato.png' className='inline h-5'></img> <h3 className='text-white  justify-center'>12th</h3></span>
-                <span className='flex'><img src='src\assets\logo\imdb_logo.png' className='inline h-5'></img> <h3 className='text-white  justify-center'>12th</h3></span>
+                   
+                <span className='flex'><img src='src\assets\logo\rottant_tomato.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
+                <span className='text-white text-sm font-medium text-center text-nowrap '>2023</span>
+                <span className='flex'><img src='src\assets\logo\imdb_logo.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
                 </div>
+                
             </div>
           </div>
           <div class="inline-block px-2">
