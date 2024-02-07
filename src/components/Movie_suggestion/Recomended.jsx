@@ -1,7 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Slider from "react-slick";
+
 
 
 export default function Recomended() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  };
   return (
     <>
     <div class="flex flex-col  md:m-15  px-3 md:px-10 ">
@@ -37,8 +46,9 @@ export default function Recomended() {
     </g>
   </svg></button>
         <div
-          data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'
+          className="slider-container bg-white max-w-full w-full"
         >
+          <Slider {...settings}>
           <div class="inline-block px-2">
             <div
               class="w-44 h-80 max-w-xs overflow-hidden rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ease-in-out"
@@ -127,6 +137,7 @@ export default function Recomended() {
                 <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
             </div>
           </div>
+          </Slider>
         </div>
         
     <button id="slideRight" type="button" className='-ml-8 hover:bg-gray-500 rounded-full flex items-center-20 z10 h-full'><svg
