@@ -37,7 +37,7 @@ export default function Recomended() {
     </g>
   </svg></button>
         <div
-          class="flex flex-nowrap overflow-x-scroll "
+          data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'
         >
           <div class="inline-block px-2">
             <div

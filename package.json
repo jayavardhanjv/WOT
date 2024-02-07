@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
     "redux": "^5.0.1",
+    "slick-slider": "^1.8.2",
     "video-react": "^0.16.0"
   },
   "devDependencies": {

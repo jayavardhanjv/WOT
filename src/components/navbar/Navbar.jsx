@@ -47,7 +47,7 @@ export default function Navbar() {
         </div>
 
         <input
-        class="peer h-full w-full outline-none text-sm text-gray-700 pr-2 bg-gray-400 focus:bg-white placeholder:text-white collapse md:visible"
+        class="peer h-full w-full outline-none text-sm text-gray-700 pr-2 bg-gray-400 focus:bg-white placeholder:text-white  hidden md:inline"
         type="text"
         id="search"
         placeholder="Search something.." /> 
