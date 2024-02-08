@@ -22,7 +22,7 @@ export default function Recomended() {
       <div
         class="flex  pb-1 items-center"
       >
-        <button id="slideLeft" type="button" className='z-10 -mr-10 flex items-center hover:bg-gray-500 rounded-full'>  <svg
+        {/* <button id="slideLeft" type="button" className='z-10 -mr-10 flex items-center hover:bg-gray-500 rounded-full'>  <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     width={40}
@@ -44,103 +44,20 @@ export default function Recomended() {
         data-original="#000000"
       />
     </g>
-  </svg></button>
+  </svg></button> */}
         <div
-          className="slider-container bg-white max-w-full w-full"
+          className="slider-container bg-white max-w-full w-screen"
         >
-          <Slider {...settings}>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-80 max-w-xs overflow-hidden rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-              <a >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-64 w-full object-fill rounded-lg'/>
-                <div className='w-full block justify-center items-center mt-1 '>
-                <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th Fail</h3>
-                
-                </div>
-                <div className='w-full flex justify-between items-center mt-1 flex-wrap px-2'>
-                   
-                <span className='flex'><img src='src\assets\logo\rottant_tomato.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
-                <span className='text-white text-sm font-medium text-center text-nowrap '>2023</span>
-                <span className='flex'><img src='src\assets\logo\imdb_logo.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
-                </div>
-                </a>
-            </div>
-          </div>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>
-          <div class="inline-block px-2">
-            <div
-              class="w-44 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-                <img src='src\assets\Poster\12th-Fail.jpeg' className='h-full w-full object-fill z-10'/>
-            </div>
-          </div>
+          <Slider {...settings} >
+            <h1>hi1</h1>
+            <h1>hi2</h1>
+            <h1>hi3</h1>
+            <h1>hi4</h1>
+          
           </Slider>
         </div>
         
-    <button id="slideRight" type="button" className='-ml-8 hover:bg-gray-500 rounded-full flex items-center-20 z10 h-full'><svg
+    {/* <button id="slideRight" type="button" className='-ml-8 hover:bg-gray-500 rounded-full flex items-center-20 z10 h-full'><svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     width={40}
@@ -162,7 +79,7 @@ export default function Recomended() {
         data-original="#000000"
       />
     </g>
-  </svg></button>
+  </svg></button> */}
       </div>
 </div>
 {/* <style>
