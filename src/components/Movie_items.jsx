@@ -9,8 +9,8 @@ export default function Movie_items() {
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
     slides: {
-      perView: 4,
-      spacing: 5,
+      perView: 5,
+      spacing: 3,
     },
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel)
@@ -22,33 +22,61 @@ export default function Movie_items() {
 
   return (
     <>
-      <div className="flex w-full h-60">
-      {loaded && instanceRef.current && (
+      <div className="flexh-2/5 mx-0">
+        <div className='flex h-auto'>
+        {loaded && instanceRef.current && (
           <>
+          <div className=' flex w-12'>
             <Arrow
               left
               onClick={(e) =>
                 e.stopPropagation() || instanceRef.current?.prev()
               }
               disabled={currentSlide === 0}
-              className="bg-white h-10 p-16"
+              className="bg-white w-auto"
             />
 
-
+</div>
           </>
         )}
-        <div ref={sliderRef} className="keen-slider text-black gap-5 items-center">
-          <div className="keen-slider__slide number-slide1 bg-white ">1</div>
-          <div className="keen-slider__slide number-slide2 bg-white">2</div>
-          <div className="keen-slider__slide number-slide3 bg-white">3</div>
-          <div className="keen-slider__slide number-slide4 bg-white">4</div>
-          <div className="keen-slider__slide number-slide5 bg-white">5</div>
-          <div className="keen-slider__slide number-slide6 bg-white">6</div>
+       
+        <div ref={sliderRef} className="keen-slider text-black gap-1 items-center flex h-full md:h-auto ">
+          <div className=" number-slide1 bg-black h-full max-w-lg w-auto min-w-44">
+            <div className='h-auto shrink-0'>
+            <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center object-fill h-full w-full'></img>
+            </div>
+            <div className=''>
+              <div className='flex justify-center'>
+            <div className='text-white self-center text-center '>Garuda Gamana Vrishabha Vahana</div>
+            </div>
+            <div className='flex justify-evenly h-auto'>
+                    <div className='flex justify-between space-x-2 rtl:space-x-reverse'>
+                        <div className='space-y-2 '>
+                        <span className='flex'><img src='src\assets\logo\imdb_logo.png' className='inline h-5'></img> <span className='text-gray-500 font-bold text-base items-center'>7.5</span></span>
+
+                        </div>
+                        <div className='space-y-2 '>
+                        <span className='flex'><img src='src/assets/logo/rottant_tomato.png' className='inline h-5'></img><span className='text-gray-500 font-bold text-base items-center'>7.5</span></span>
+
+                        </div>
+                    </div>
+            </div>
+            </div>
+          </div>
+          <div className="keen-slider__slide number-slide2 bg-white h-full">2</div>
+          <div className="keen-slider__slide number-slide3 bg-white h-full">3</div>
+          <div className="keen-slider__slide number-slide4 bg-white h-full">4</div>
+          <div className="keen-slider__slide number-slide5 bg-white h-full">5</div>
+          <div className="keen-slider__slide number-slide6 bg-white h-full">6</div>
+          <div className="keen-slider__slide number-slide3 bg-white h-full">3</div>
+          <div className="keen-slider__slide number-slide4 bg-white h-full">4</div>
+          <div className="keen-slider__slide number-slide5 bg-white h-full">5</div>
+          <div className="keen-slider__slide number-slide6 bg-white h-full">6</div>
         </div>
+        
         {loaded && instanceRef.current && (
           <>
-
-
+          <div className='flex w-14'>
             <Arrow
               onClick={(e) =>
                 e.stopPropagation() || instanceRef.current?.next()
@@ -59,11 +87,13 @@ export default function Movie_items() {
               }
               className="bg-white"
             />
+            </div>
           </>
         )}
+        </div>
       </div>
       {loaded && instanceRef.current && (
-        <div className="dots bg-white">
+        <div className="dots ">
           {[
             ...Array(instanceRef.current.track.details.slides.length).keys(),
           ].map((idx) => {
@@ -74,7 +104,7 @@ export default function Movie_items() {
                   instanceRef.current?.moveToIdx(idx)
                 }}
                 class={"dot" + (currentSlide === idx ? " active" : "")}
-                className='fill-black'
+                className='fill-red-900 text-red-900'
               ></button>
             )
           })}
