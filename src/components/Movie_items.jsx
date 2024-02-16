@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Recomended from './Movie_suggestion/Recomended'
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import { NavLink } from 'react-router-dom'
 
 export default function Movie_items() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -22,6 +23,11 @@ export default function Movie_items() {
 
   return (
     <>
+           <h1
+        class="flex  font-semibold text-xl text-white py-10 px-3"
+      >
+        Recomended for you
+      </h1>
       <div className="flexh-2/5 mx-0">
         <div className='flex h-auto'>
         {loaded && instanceRef.current && (
@@ -39,31 +45,47 @@ export default function Movie_items() {
 </div>
           </>
         )}
-       
-        <div ref={sliderRef} className="keen-slider text-black gap-1 items-center flex h-full md:h-auto ">
-          <div className=" number-slide1 bg-black h-full max-w-lg w-auto min-w-44">
+
+        <div ref={sliderRef} className="keen-slider text-black gap-2 items-center flex h-full md:h-auto ">
+          <div className="keen-slider__slide number-slide1 bg-black h-full max-w-lg w-auto min-w-44">
+          <NavLink to='/VideoPlayer'>
             <div className='h-auto shrink-0'>
-            <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center object-fill h-full w-full'></img>
+            <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center object-fill h-full w-full rounded-md'></img>
             </div>
-            <div className=''>
-              <div className='flex justify-center'>
-            <div className='text-white self-center text-center '>Garuda Gamana Vrishabha Vahana</div>
+            <div className='top-5'>
+              <div className='flex justify-center px-1'>
+            <div className='text-white text-sm font-medium text-center '>Garuda Gamana Vrishabha Vahana</div>
             </div>
-            <div className='flex justify-evenly h-auto'>
-                    <div className='flex justify-between space-x-2 rtl:space-x-reverse'>
-                        <div className='space-y-2 '>
-                        <span className='flex'><img src='src\assets\logo\imdb_logo.png' className='inline h-5'></img> <span className='text-gray-500 font-bold text-base items-center'>7.5</span></span>
 
-                        </div>
-                        <div className='space-y-2 '>
-                        <span className='flex'><img src='src/assets/logo/rottant_tomato.png' className='inline h-5'></img><span className='text-gray-500 font-bold text-base items-center'>7.5</span></span>
+            <div className='w-full flex justify-between items-center mt-1 flex-wrap px-2'>
+                   
+                   <span className='flex'><img src='src\assets\logo\rottant_tomato.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
+                   <span className='text-white text-sm font-medium text-center text-nowrap self-center-center'>2023</span>
+                   <span className='flex'><img src='src\assets\logo\imdb_logo.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
+                   </div>
 
-                        </div>
-                    </div>
             </div>
+            </NavLink>
+          </div>
+          
+          <div className="keen-slider__slide number-slide2 bg-black h-full max-w-screen-sm w-auto min-w-fit">
+            <div className='h-auto shrink-0'>
+            <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center object-fill h-full w-full rounded-md'></img>
+            </div>
+            <div className='top-5'>
+              <div className='flex justify-center px-1'>
+            <div className='text-white text-sm font-medium text-center '>12th Fail</div>
+            </div>
+
+            <div className='w-full flex justify-between items-center mt-1 flex-wrap px-2'>
+                   
+                   <span className='flex'><img src='src\assets\logo\rottant_tomato.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
+                   <span className='text-white text-sm font-medium text-center text-nowrap self-center-center'>2023</span>
+                   <span className='flex'><img src='src\assets\logo\imdb_logo.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
+                   </div>
+
             </div>
           </div>
-          <div className="keen-slider__slide number-slide2 bg-white h-full">2</div>
           <div className="keen-slider__slide number-slide3 bg-white h-full">3</div>
           <div className="keen-slider__slide number-slide4 bg-white h-full">4</div>
           <div className="keen-slider__slide number-slide5 bg-white h-full">5</div>

@@ -8,8 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Main />
-      {/* <Play_page /> */}
+      <Outlet />
     </>
   )
 }

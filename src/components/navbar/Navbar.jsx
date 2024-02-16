@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
   return (
@@ -13,15 +14,15 @@ export default function Navbar() {
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
             </button>
-            <a href='https://www.google.com' className='flex items-center space-x-3 rtl:space-x-reverse'>
+            <NavLink to="/" className='flex items-center space-x-3 rtl:space-x-reverse'>
             <img src='src\assets\logo\logo.png' width={50} className=''></img>
             <span className='text-white self-center font-bold text-2xl whitespace-nowrap'>WOT</span>
-            </a>
+            </NavLink>
             </div>
         <div className='hidden w-full md:block md:w-auto ' id="navbar-default">
             <ul className='font-normal  flex items-center flex-col p-4 md:p-0 mt-4 md:flex-row  md:space-x-2 lg:space-x-8 rtl:space-x-reverse md:mt-0 mx-5'>
                 <li>
-                    <a href='https://www.google.com/' className='block py-2 px-3 text-white rounded md:p-0'>Home</a>
+                    <NavLink to='/' className='block py-2 px-3 text-white rounded md:p-0'>Home</NavLink>
                 </li>
                 <li>
                 <a href='https://www.google.com/' className='block py-2 px-3 text-white rounded md:p-0'>Series</a>
