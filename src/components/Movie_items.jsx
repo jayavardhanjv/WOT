@@ -47,7 +47,7 @@ export default function Movie_items() {
         )}
 
         <div ref={sliderRef} className="keen-slider text-black gap-2 items-center flex h-full md:h-auto ">
-          <div className="keen-slider__slide number-slide1 bg-black h-full max-w-lg w-auto min-w-44">
+          <div className="keen-slider__slide number-slide1 bg-black h-full max-w-lg w-auto min-w-60">
           <NavLink to='/VideoPlayer'>
             <div className='h-auto shrink-0'>
             <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center object-fill h-full w-full rounded-md'></img>
@@ -57,7 +57,7 @@ export default function Movie_items() {
             <div className='text-white text-sm font-medium text-center '>Garuda Gamana Vrishabha Vahana</div>
             </div>
 
-            <div className='w-full flex justify-between items-center mt-1 flex-wrap px-2'>
+            <div className='w-full hidden md:flex justify-between items-center mt-1 flex-wrap px-2'>
                    
                    <span className='flex'><img src='src\assets\logo\rottant_tomato.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
                    <span className='text-white text-sm font-medium text-center text-nowrap self-center-center'>2023</span>
@@ -68,7 +68,7 @@ export default function Movie_items() {
             </NavLink>
           </div>
           
-          <div className="keen-slider__slide number-slide2 bg-black h-full max-w-screen-sm w-auto min-w-fit">
+          <div className="keen-slider__slide number-slide2 bg-black h-full max-w-screen-sm w-auto min-w-60">
             <div className='h-auto shrink-0'>
             <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center object-fill h-full w-full rounded-md'></img>
             </div>
@@ -77,7 +77,7 @@ export default function Movie_items() {
             <div className='text-white text-sm font-medium text-center '>12th Fail</div>
             </div>
 
-            <div className='w-full flex justify-between items-center mt-1 flex-wrap px-2'>
+            <div className='w-full hidden md:flex justify-between items-center mt-1 flex-wrap px-2'>
                    
                    <span className='flex'><img src='src\assets\logo\rottant_tomato.png' className='inline h-5'></img> <h3 className='text-white text-sm font-medium text-center text-nowrap '>12th</h3></span>
                    <span className='text-white text-sm font-medium text-center text-nowrap self-center-center'>2023</span>

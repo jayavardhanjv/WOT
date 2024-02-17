@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <>
     
-    <nav className='bg-black dark:bg-black'>
+    <nav className='bg-black dark:bg-black sticky z-10'>
         <div className='flex-nowrap max-w-screen-xl flex items-center justify-between mx-auto md:p-4 '>
             <div className='flex space-x-2 rtl:space-x-auto'>
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-full md:hidden hover:bg-gray-700   dark:text-gray-400  " aria-controls="navbar-default" aria-expanded="false">
@@ -25,7 +25,7 @@ export default function Navbar() {
                     <NavLink to='/' className='block py-2 px-3 text-white rounded md:p-0'>Home</NavLink>
                 </li>
                 <li>
-                <a href='https://www.google.com/' className='block py-2 px-3 text-white rounded md:p-0'>Series</a>
+                <NavLink to='alltpe' className='block py-2 px-3 text-white rounded md:p-0'>Series</NavLink>
                 </li>
                 <li>
                 <a href='https://www.google.com/' className='block py-2 px-3 text-white rounded md:p-0'>Recommended</a>
