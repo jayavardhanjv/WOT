@@ -6,7 +6,6 @@ export default function Main() {
   return (
     <div className='bg-black w-full h-auto text-white max-w-screen-full'>
         <div className='h-2/3 block mb-5'>
-       {/* <img src='src\assets\Poster\poster.jpg' className='max-h-full w-full object-fill'/>  */}
        <div className='w-full h-96'>
        <Carosal_images />
        </div>
