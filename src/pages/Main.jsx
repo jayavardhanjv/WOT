@@ -1,4 +1,3 @@
-import React from 'react'
 import Carosal_images from '../components/Carosal_images'
 import Movie_items from '../components/Movie_items'
 
