@@ -15,7 +15,7 @@ export default function Recomended() {
     <>
     <div class="flex flex-col  md:m-15  px-3 md:px-10 ">
 <h1
-        class="flex  font-semibold text-3xl text-white py-10 px-3"
+        class="font-semibold text-3xl text-white mx-20 my-10 "
       >
         Recomended for you
       </h1>

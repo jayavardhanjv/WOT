@@ -9,7 +9,7 @@ export default function Main() {
        <Carosal_images />
        </div>
        </div>
-       <div className='h-auto max-h-md w-full'>
+       <div className='relative h-2/5 w-full box-content'>
         <Movie_items />
        </div>
       

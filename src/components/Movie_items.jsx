@@ -24,15 +24,15 @@ export default function Movie_items() {
   return (
     <>
            <h1
-        class="flex  font-semibold text-xl text-white py-10 px-3"
+        class=" my-10 mx-10  font-semibold text-xl text-white "
       >
         Recomended for you
       </h1>
-      <div className="flexh-2/5 mx-0">
-        <div className='flex h-auto'>
+      <div className="">
+        <div className='flex h-1/4 box-content'>
         {loaded && instanceRef.current && (
           <>
-          <div className=' flex w-12'>
+          <div className='relative flex w-12 self-center'>
             <Arrow
               left
               onClick={(e) =>
@@ -46,13 +46,13 @@ export default function Movie_items() {
           </>
         )}
 
-        <div ref={sliderRef} className="keen-slider text-black gap-2 items-center flex h-full md:h-auto ">
-          <div className="keen-slider__slide number-slide1 bg-black h-full max-w-lg w-auto min-w-60">
+        <div ref={sliderRef} className=" relative keen-slider text-black gap-2 items-center  h-full md:h-auto ">
+          <div className="keen-slider__slide number-slide2 bg-black h-2/6  min-w-40 max-w-44">
           <NavLink to='/VideoPlayer'>
-            <div className='h-auto shrink-0'>
-            <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center object-fill h-full w-full rounded-md'></img>
-            </div>
-            <div className='top-5'>
+            
+            <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center shrink-0  w-auto rounded-md z-0'></img>
+            
+            <div className='-mt-20 justify-end bg-black z-10'>
               <div className='flex justify-center px-1'>
             <div className='text-white text-sm font-medium text-center '>Garuda Gamana Vrishabha Vahana</div>
             </div>
@@ -68,13 +68,13 @@ export default function Movie_items() {
             </NavLink>
           </div>
           
-          <div className="keen-slider__slide number-slide2 bg-black h-full max-w-screen-sm w-auto min-w-60">
-            <div className='h-auto shrink-0'>
-            <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center object-fill h-full w-full rounded-md'></img>
-            </div>
-            <div className='top-5'>
+          <div className="keen-slider__slide number-slide2  h-2/6  min-w-40 max-w-44 ">
+            
+            <img src='src\assets\Poster\12th-Fail.jpeg' className='place-self-center-center shrink-0  w-auto rounded-md '></img>
+            
+            <div className=' -mt-20 justify-end bottom-5 bg-black z-20'>
               <div className='flex justify-center px-1'>
-            <div className='text-white text-sm font-medium text-center '>12th Fail</div>
+            <div className='text-white text-lg font-medium text-center '>12th Fail</div>
             </div>
 
             <div className='w-full hidden md:flex justify-between items-center mt-1 flex-wrap px-2'>

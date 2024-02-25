@@ -5,8 +5,8 @@ export default function Navbar() {
   return (
     <>
     
-    <nav className='bg-black dark:bg-black sticky z-10'>
-        <div className='flex-nowrap max-w-screen-xl flex items-center justify-between mx-auto md:p-4 '>
+    <nav className='bg-black dark:bg-black sticky z-10 w-full'>
+        <div className='flex-nowrap w-auto flex items-center justify-between mx-20 md:p-4 overflow-x-hidden'>
             <div className='flex space-x-2 rtl:space-x-auto'>
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-full md:hidden hover:bg-gray-700   dark:text-gray-400  " aria-controls="navbar-default" aria-expanded="false">
             <span class="sr-only text-white">Open main menu</span>
